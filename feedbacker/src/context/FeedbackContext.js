@@ -18,7 +18,7 @@ export const FeedbackProvider = ({ children }) => {
 
   const fetchFeedback = async () => {
     const response = await fetch(
-      `http://localhost:5000/feedback?_sort=id&_oder=desc`
+      "http://localhost:5000/feedback?_sort=id&_order=desc"
     );
     const data = await response.json();
 
